@@ -1,0 +1,100 @@
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .container h1 {
+    font-size: 24px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .imageWrapper {
+    margin: 5px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .imageWrapper:hover {
+    transform: scale(1.5);
+    z-index: 2;
+  }
+  
+  .image {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .imageWrapper:hover .image {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    transform: scale(1.5);
+  }
+  
+  .fullscreenOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .fullscreenImage {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .chevron:first-of-type {
+    left: 10px;
+  }
+  
+  .chevron:last-of-type {
+    right: 10px;
+  }
+  
+  .resizeIcon {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .chevron {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  
+  .fullscreenOverlay .chevron {
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  

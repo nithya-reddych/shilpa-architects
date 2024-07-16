@@ -1,0 +1,194 @@
+.container {
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    position: relative;
+  }
+  
+  .section {
+    font-family: 'Fanwood Text', serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .section img {
+    width: 35%;
+    height: 500px;
+  }
+  
+  .section .description {
+    font-family: 'Fanwood Text', serif;
+    font-size: 20px;
+    width: 55%;
+  }
+  
+  .parallax {
+    background-image: url("/assets/nr-livingroom.jpeg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px 0;
+  }
+  
+  .gallery {
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gallery p {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .gallery img {
+    width: 80%;
+    height: 575px;
+    background-color: white;
+    display: none;
+    object-fit: contain;
+  }
+  
+  .gallery img.active {
+    display: inline;
+  }
+  
+  .imageCounter {
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    color: #333;
+  }
+  
+  .resizeIcon {
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .fullscreenOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .fullscreenOverlay img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .buttonContainer {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .chevron {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  
+  .fullscreenOverlay .chevron {
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .fullscreenOverlay .chevron:first-of-type {
+    left: 20px;
+  }
+  
+  .fullscreenOverlay .chevron:last-of-type {
+    right: 20px;
+  }
+  
+  .fullscreenOverlay .resizeIcon {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    cursor: pointer;
+  }
+  .fullscreenOverlay .imageCounter{
+    color: white;
+    font-size: 16px;
+    bottom: 30px;
+
+  }
+  .navButtons {
+    font-family: "Cinzel", serif;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navButtons button {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Cinzel', serif;
+    border: none;
+    cursor: pointer;
+    background-color: #ceab9361;
+    overflow: hidden;
+    transition: background 0.6s ease, color 0.6s ease;
+  }
+
+  .navButtons button:hover {
+    background-size: cover;
+    transition: background 0.6s ease, color 0.6s ease;
+    background-color: #d2af98bc;
+    color: #000000;
+}
+  
+  .navButtons button span:nth-child(2) {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+
+  .navButtons button span {
+    color: #777;
+    display: block;
+}
+  
+  .navButtons .invisible {
+    display: none;
+  }
+  
+  

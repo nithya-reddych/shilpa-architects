@@ -1,0 +1,82 @@
+/* src/styles/Works.module.css */
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .workGrid {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .workItem {
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .workItem:hover {
+    transform: scale(1.05);
+  }
+  
+  .workItem img {
+    width: 400px;
+    height: 200px;
+    transition: filter 0.3s ease;
+  }
+  
+  .workItem:hover img {
+    filter: blur(2px);
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    background: rgba(0, 0, 0, 0.2);
+    color: rgb(68, 68, 68);
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: left;
+    padding-bottom: 100px;
+    padding-left: 20px;
+  }
+  
+  .workItem:hover .overlay {
+    opacity: 1;
+  }
+  
+  .workInfo {
+    padding: 15px;
+    text-align: left;
+    max-width: 650px;
+  }
+  
+  .workInfo p {
+    margin: 5px 0;
+    font-size: 1em;
+  }
+  
+  .workInfo strong {
+    display: block;
+    color: #333;
+    font-weight: 700;
+  }
+  

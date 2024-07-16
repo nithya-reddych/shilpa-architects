@@ -1,0 +1,36 @@
+"use client";
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import '../app/globals.css';
+
+import styles from '../styles/Navbar.module.css';
+
+const Navbar = () => {
+  const pathname = usePathname();
+  
+  const linkMap: Record<string, string> = {
+    '/': 'home-link',
+    '/works': 'projects-link',
+    '/contact': 'contact-link',
+  };
+
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>
+        <Link href="/">
+          <img src="/assets/logo-1.png" alt="Logo" className={styles.logoImg} />
+        </Link>
+      </div>
+      <div className={styles.navLinks}>
+        <Link href="/" id="home-link" className={pathname === '/' ? styles.currentPage : ''}>Home</Link>
+        <Link href="/works" id="projects-link" className={pathname === '/works' ? styles.currentPage : ''}>Projects</Link>
+        <Link href="/contact" id="contact-link" className={pathname === '/contact' ? styles.currentPage : ''}>Contact</Link>
+        <Link href="/gallery" id="gallery" className={pathname === '/gallery' ? styles.currentPage : ''}>Gallery</Link>
+
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
