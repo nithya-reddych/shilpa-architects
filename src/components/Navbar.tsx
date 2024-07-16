@@ -13,6 +13,8 @@ const Navbar = () => {
     '/': 'home-link',
     '/works': 'projects-link',
     '/contact': 'contact-link',
+    '/team': 'team-link',
+    '/gallery': 'gallery-link',
   };
 
   return (
@@ -25,8 +27,11 @@ const Navbar = () => {
       <div className={styles.navLinks}>
         <Link href="/" id="home-link" className={pathname === '/' ? styles.currentPage : ''}>Home</Link>
         <Link href="/works" id="projects-link" className={pathname === '/works' ? styles.currentPage : ''}>Projects</Link>
+        <Link href="/team" id="team-link" className={pathname === '/team' ? styles.currentPage : ''}>Team</Link>
         <Link href="/contact" id="contact-link" className={pathname === '/contact' ? styles.currentPage : ''}>Contact</Link>
-        <Link href="/gallery" id="gallery" className={pathname === '/gallery' ? styles.currentPage : ''}>Gallery</Link>
+
+
+        <Link href="/gallery" id="gallery-link" className={pathname === '/gallery' ? styles.currentPage : ''}>Gallery</Link>
 
       </div>
     </nav>
