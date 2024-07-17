@@ -4,24 +4,31 @@ import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
+
 config.autoAddCss = false;
 
 const Contact = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>Get in Touch with Us !</h1>
-      <div className={styles.contactInfo}>
-        <div className={`${styles.contactItem} ${styles.fadeIn}`}>
-          <FontAwesomeIcon icon={faPhone} className={styles.icon} />
-          <span className={styles.contactText}>+91 99999 99999</span>
-        </div>
-        <div className={`${styles.contactItem} ${styles.fadeIn}`}>
-          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
-          <span className={styles.contactText}>shilpa-architects@gmail.com</span>
-        </div>
-        <div className={`${styles.contactItem} ${styles.fadeIn}`}>
-          <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.icon} />
-          <span className={styles.contactText}>Hanamkonda</span>
+      <div className={styles.contactBox}>
+        <h1 className={styles.heading}>Get in Touch with Us !</h1>
+        <div className={styles.contactInfo}>
+          <div className={`${styles.contactItem} ${styles.fadeIn}`}>
+            <FontAwesomeIcon icon={faPhone} className={styles.icon} />
+            <span className={styles.contactText}>+91 95810 66049</span>
+          </div>
+          <div className={`${styles.contactItem} ${styles.fadeIn}`}>
+            <FontAwesomeIcon icon={faPhone} className={styles.icon} />
+            <span className={styles.contactText}>+91 96524 28987</span>
+          </div>
+          <div className={`${styles.contactItem} ${styles.fadeIn}`}>
+            <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
+            <span className={styles.contactText}>shilpaarchitects007@gmail.com</span>
+          </div>
+          <div className={`${styles.contactItem} ${styles.fadeIn}`}>
+            <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.icon} />
+            <span className={styles.contactText}>Hanamkonda</span>
+          </div>
         </div>
       </div>
     </div>

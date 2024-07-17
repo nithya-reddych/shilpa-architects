@@ -1,6 +1,7 @@
 import '../app/globals.css';
 import Navbar from '../components/Navbar';
-import '../styles/Navbar.module.css'
+import FooterWrapper from '../components/FooterWrap';
+import '../styles/Navbar.module.css';
 
 export const metadata = {
   title: 'Shilpa Architects',
@@ -12,8 +13,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <main>{children}</main>
+        <FooterWrapper /> {}
       </body>
     </html>
   );
 }
+

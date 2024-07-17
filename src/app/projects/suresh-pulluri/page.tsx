@@ -8,19 +8,19 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 
-const NarasimhaResidence = () => {
+const SureshPulluri = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const images = [
-    '/assets/narasimha-residence.jpeg',
-    '/assets/nr-bedroom.jpeg',
-    '/assets/nr-drawingroom.jpeg',
-    '/assets/nr-kitchen.jpeg',
-    '/assets/nr-livingroom.jpeg',
-    '/assets/nr-room.jpeg',
+    '/assets/sp01.jpeg',
+    '/assets/sp02.jpeg',
+    '/assets/sp03.jpeg',
+    '/assets/sp04.jpeg',
+    '/assets/sp05.jpeg',
+    '/assets/sp06.jpeg',
   ];
 
-  const parallaxImageUrl = '/assets/nr-livingroom.jpeg';
+  const parallaxImageUrl = '/assets/sp04.jpeg';
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -180,7 +180,7 @@ const NarasimhaResidence = () => {
           {!isFullscreen && <FontAwesomeIcon icon={faExpand} onClick={() => toggleFullscreen()} className={styles.resizeIcon} />}
         </div>
         <div className={styles.section}>
-          <img src="/assets/nr-bedroom.jpeg" alt="Project Image 1" />
+          <img src="/assets/sp02.jpeg" alt="Project Image 1" />
           <div className={styles.description}>
             <h2>Elegance in Every Corner</h2>
             <p>Discover the seamless blend of modern design and timeless elegance in this exquisite bedroom. Featuring a harmonious palette of soft neutrals and rich textures, the room offers a serene retreat, while the carefully chosen furnishings add a touch of luxury and comfort. Every detail is meticulously crafted to provide a tranquil and inviting space.</p>
@@ -202,7 +202,7 @@ const NarasimhaResidence = () => {
             <h2>Artful Living Spaces</h2>
             <p>Experience the beauty of artful living in this thoughtfully designed drawing room. The room is characterized by its open layout and sophisticated decor, where contemporary art pieces and classic furniture coexist harmoniously. The warm tones and plush seating arrangements create an inviting environment perfect for both relaxation and entertaining. This space embodies the perfect balance of style and functionality.</p>
           </div>
-          <img src="/assets/nr-drawingroom.jpeg" alt="Project Image 2" />
+          <img src="/assets/sp03.jpeg" alt="Project Image 2" />
         </div>
         <div id="fullscreenOverlay" className={styles.fullscreenOverlay} style={{ display: isFullscreen ? 'flex' : 'none' }}>
           <FontAwesomeIcon icon={faChevronLeft} onClick={() => showPreviousImage(true)} className={styles.chevron} />
@@ -213,17 +213,17 @@ const NarasimhaResidence = () => {
         </div>
       </div>
       <div className={styles.navButtons}>
-        <button id="prev-btn" onClick={() => navigateTo('prev')} style={{ display: 'none' }}>
+        <button id="prev-btn" onClick={() => navigateTo('prev')}>
           <span>Previous Project</span>
-          <span>project000</span>
+          <span>NIT Warangal</span>
         </button>
         <button id="next-btn" onClick={() => navigateTo('next')}>
           <span>Next Project</span>
-          <span>Vikas School</span>
+          <span>Project 005</span>
         </button>
       </div>
     </>
   );
 };
 
-export default NarasimhaResidence;
+export default SureshPulluri;

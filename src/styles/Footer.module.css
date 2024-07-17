@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #ffffff;
+    /* opacity: 80%; */
+    font-family: 'Fanwood Text', serif;
+   
+    font-size: 18px;
+    color: #505050;
+    text-align: center;
+   
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0 5px;
+  }
+  
+  .privacyLink {
+    color: #505050;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .privacyLink:hover {
+    color: blue;
+    text-decoration: none;
+  }
+  

@@ -1,76 +1,75 @@
 .navbar {
-    font-family: "Cinzel", serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: rgb(0, 0, 0);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    z-index: 1000;
-  }
-  .navLinks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    color: rgb(0, 0, 0);
-  }
-  .navLinks a {
-    display: inline;
+  font-family: "Cinzel", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 1000;
+}
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: rgb(0, 0, 0);
+}
+.navLink {
+  display: inline;
+  text-decoration: none;
+  color: #4d4d4d;
+  margin-left: 10px;
+  margin-right: 40px;
+  transition: font-weight 0.3s ease, color 0.3s ease;
+  font-size: 20px;
+  font-weight: 500;
+}
+.navLink:hover {
+  color: #000000;
+}
+.currentPage {
 
-    text-decoration: none;
-    color: #4d4d4d;
-    margin-left: 20px;
-    margin-right: 40px;
-    transition: font-weight 0.3s ease, color 0.3s ease;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .navLinks a:hover {
-    color: #000000;
-  }
-  .currentPage {
-    color: black;
-    font-weight: bold;
-  }
-  .logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
+  color: black;
+  font-weight: 600;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.logoImg {
+  width: 18%;
+  height: 18%;
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 0.5rem;
   }
   .logoImg {
-    width: 18%;
-    height: 18%;
+    width: 50%;
+    height: 50%;
   }
-  @media screen and (max-width: 600px) {
-    .navbar {
-      padding: 0.5rem;
-    }
-    .logoImg {
-      width: 50%;
-      height: 50%;
-    }
-    .navLinks a {
-      font-size: 14px;
-      margin-right: 15px;
-    }
+  .navLinks a {
+    font-size: 14px;
+    margin-right: 15px;
   }
-  @media screen and (max-width: 768px) {
-    .navbar {
-      padding: 0.5rem;
-    }
-    .logoImg {
-      width: 40%;
-      height: 40%;
-    }
-    .navLinks a {
-      font-size: 14px;
-      margin-right: 15px;
-    }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
   }
-  
+  .logoImg {
+    width: 40%;
+    height: 40%;
+  }
+  .navLinks a {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+}
